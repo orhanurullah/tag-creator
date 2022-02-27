@@ -1,0 +1,85 @@
+body {
+  font-family: monospace;
+}
+@media screen and (min-width: 782px) {
+  .wrapper {
+    max-width: 60% !important;
+  }
+  #todo{
+      max-width:60% !important;
+  }
+}
+.wrapper {
+  max-width: 90%;
+  margin: auto;
+  padding: 10px 5px 5px 5px;
+  background-color: coral;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px 4px lightgray;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  border-radius: 8px;
+  padding: 5px;
+  background-color: brown;
+  color: white;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+.head > h2 {
+  padding-left: 25px;
+  color: darkolivegreen;
+}
+.head > a {
+  margin: 15px 3px 0 0;
+}
+button:hover {
+  background-color: blue;
+}
+.form {
+  text-align: center;
+  width: 90%;
+  height: 35px;
+  margin: auto;
+  border-radius: 10px;
+  border: 0;
+  margin-bottom: 10px;
+  background-color: white;
+}
+input {
+  width: 80%;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+input::placeholder {
+  padding-left: 5px;
+}
+input:focus-visible {
+  outline: none;
+}
+#todo {
+  width: 90%;  
+  margin: auto;
+  margin-top: 20px;
+  padding: 5px;
+}
+#todo > * {
+  border: 1px solid olive;
+  padding: 8px 0 8px 10px;
+  color: blue;
+  border-radius: 8px;
+  margin: 5px;
+}
+del {
+  color: black;
+}
+ul {
+  list-style-type: none;
+  margin-right: 10px;
+}
