@@ -30,6 +30,10 @@ button {
   background-color: brown;
   color: white;
 }
+.heading{
+    text-align: center;
+}
+
 .head {
   display: flex;
   justify-content: space-between;
@@ -49,6 +53,7 @@ button:hover {
   width: 90%;
   height: 35px;
   margin: auto;
+  margin-top: 10px;
   border-radius: 10px;
   border: 0;
   margin-bottom: 10px;
