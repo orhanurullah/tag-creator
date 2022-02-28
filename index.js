@@ -7,6 +7,7 @@ const button5 = document.getElementById('button5');
 const button6 = document.getElementById('button6');
 
 const data = document.getElementById('input');
+const show = document.getElementById('show');
 let a = 0;
 // Create P Element
 const createElement = (type) => {

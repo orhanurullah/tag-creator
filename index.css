@@ -94,3 +94,7 @@ del {
 #todo > ol,ul{
     list-style-position: inside;
 }
+.options{
+    display: flex;
+    justify-content: space-around;
+}
