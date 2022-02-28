@@ -1,18 +1,21 @@
+:root{
+    --maximum-with:60%;
+}
 body {
   font-family: monospace;
 }
 @media screen and (min-width: 782px) {
   .wrapper {
-    max-width: 60% !important;
+    max-width: var(--maximum-with) !important;
   }
   #todo{
-      max-width:60% !important;
+      max-width:var(--maximum-with) !important;
   }
 }
 .wrapper {
   max-width: 90%;
   margin: auto;
-  padding: 10px 5px 5px 5px;
+  padding: 10px 5px 10px 5px;
   background-color: coral;
   border-radius: 8px;
   box-shadow: 4px 4px 4px 4px lightgray;
@@ -79,7 +82,10 @@ input:focus-visible {
 del {
   color: black;
 }
-ul {
-  list-style-type: none;
+.head-list {
+  list-style-type: square;
   margin-right: 10px;
+}
+#todo > ol,ul{
+    list-style-position: inside;
 }

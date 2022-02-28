@@ -14,7 +14,15 @@ const createElement = (type) => {
     if(!elementName){
         return null;
     }
+    let message = elementName + " element is in added. Element No: " + a;
     let element = document.createElement(elementName);
+    if(elementName === "ol" || elementName === "ul"){
+        let itemElement = document.createElement("li");
+        element.appendChild(itemElement);
+        itemElement.innerText = message;
+    }else{
+        element.innerText = message;
+    }
     element.classList.add(elementName+""+a);
     element.setAttribute('id', elementName+""+(a++));
     if(type === 1){
@@ -22,7 +30,6 @@ const createElement = (type) => {
     }else{
         todo.insertBefore(element, todo.firstChild);
     }
-    element.innerText = elementName + " elementi eklendi. Element No: " + a;
     element.style.cursor="pointer";
     element.addEventListener('dblclick',function(){
        let val = element.innerText;
