@@ -6,11 +6,25 @@
 - See HTML element's behaviour
 
 ## Using
+
+#### Change Background Color Module
+
+ - Enter into input value that you want values (0-255)
+ - See the page changes background color
+ - See the input element changes background color
+ - Change background color as random
+ - Change background color with defined color names
+  
+#### Tag Module
+
 Write tag name in the input element after then select one of the buttons.   
 
 - If you want to add as a last element you can click to the 'Add to Last' buton. 
+- 
 - If you want to add as a first elementd you can click to the 'Add to First' buton.
-            
+- 
+- If you double-click on the element, the text inside the element is crossed out.
+-             
 - If you want to delete all elements you can click to the 'All Remove' buton
             
 - If you want to delete first element you can click to the 'Remove from First' buton

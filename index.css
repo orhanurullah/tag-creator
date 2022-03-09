@@ -3,8 +3,9 @@
 }
 body {
   font-family: monospace;
+  background-color: #ffffff;
 }
-@media screen and (min-width: 782px) {
+@media screen and (min-width: 972px) {
   .wrapper {
     max-width: var(--maximum-with) !important;
   }
@@ -16,7 +17,7 @@ body {
   max-width: 90%;
   margin: auto;
   padding: 10px 5px 10px 5px;
-  background-color: coral;
+  background-color: bisque;
   border-radius: 8px;
   box-shadow: 4px 4px 4px 4px lightgray;
 }
@@ -30,7 +31,7 @@ button {
   background-color: brown;
   color: white;
 }
-.heading{
+.heading > h3{
     text-align: center;
 }
 
@@ -48,6 +49,24 @@ button {
 button:hover {
   background-color: blue;
 }
+.top-nav{
+  display: flex;
+  justify-content: space-around;
+}
+
+.bgcolor-group{
+  margin-top:5px;
+}
+.option-colors{
+}
+#colors{
+  border-radius: 4px;
+  min-height: 25px;
+}
+.new-color{
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .form {
   text-align: center;
   width: 90%;
@@ -59,7 +78,7 @@ button:hover {
   margin-bottom: 10px;
   background-color: white;
 }
-input {
+#input {
   width: 80%;
   height: 30px;
   border: none;
@@ -74,6 +93,7 @@ input:focus-visible {
 #todo {
   width: 90%;  
   margin: auto;
+  background-color: bisque;
   margin-top: 20px;
   padding: 5px;
 }
@@ -83,6 +103,7 @@ input:focus-visible {
   color: blue;
   border-radius: 8px;
   margin: 5px;
+  box-shadow: 3px 3px 3px 3px lightgray;
 }
 del {
   color: black;
@@ -97,4 +118,33 @@ del {
 .options{
     display: flex;
     justify-content: space-around;
+}
+.top{
+  border:1px solid gray;
+  border-radius: 5px;
+  padding:8px 0 8px 0;
+}
+.top-nav-title{
+  text-align: center;
+}
+#show{
+    background-color: crimson;
+    border-radius: 3px;
+    cursor: pointer;
+    padding:3px;
+    color:wheat;
+}
+#show:hover{
+    background-color: cornflowerblue;
+    color:brown;
+}
+.panel{
+    display:none;
+    border:1px solid lightblue;
+    margin-top: 10px;
+    border-radius: 8px;
+    
+}
+.panel > h2{
+    text-align: center;
 }

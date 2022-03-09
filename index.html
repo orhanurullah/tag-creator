@@ -8,16 +8,60 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
         <div class="heading">
             <div class="head">
                 <h2>Add Element in Page</h2>
             <a href="https://github.com/orhanurullah" target="_blank">Author</a>
             </div>
-            <h3>How to use this program</h3>
+            <div class="top">
+                <div class="top-nav-title">
+                    <h3>Change Color This HTML Page</h3>
+                </div>
+                <div class="top-nav">
+                    <div class="bgcolor-group">
+                        <label for="bgcolor">With RGB(0-255)</label>
+                    <input type="text" name="bgcolor" id="bgcolor">
+                    </div>
+                    <button id="random">As Random</button>
+                    <div class="option-colors">
+                        <select id="colors">
+                            <option>Select a Color</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <h3>How to work this program?</h3>
             <div class="options">
                 <a class="readme-link" href="https://github.com/orhanurullah/tag-creator/blob/master/README.md" target="_blank">Look at the Readme file</a>
-                <a id="show">Show At This Page(not active yet)</a>
+                <a id="show">Show At This Page</a>
+            </div>
+            <div class="panel" id="panel">
+                <h2>Purpose</h2>
+                <ul>
+                    <li>Make the transactions like Add, Delete, Add to First, Add to Last, Remove from first, Remove from Last</li>
+                    <li>Make to use right button click for remove element</li>
+                    <li>Apply CSS to the HTML elements</li>
+                    <li>Apply Javascript to the html elements</li>
+                    <li>See HTML element's behaviour</li>
+                </ul> 
+                <h2>Using</h2>
+                <ul>
+                    <li>Enter into input value that you want values (0-255)</li>
+                    <li>See the page changes background color</li>
+                    <li>See the input element changes background color</li>
+                    <li>Change background color as random</li>
+                    <li>Change background color with defined color names</li>
+                    <li>Write tag name in the input element after then select one of the butons.</li>
+                    <li>If you want to add as a last element you can click to the 'Add to Last' buton.</li>
+                    <li>If you want to add as a first elementd you can click to the 'Add to First' buton.</li>
+                    <li>If you double-click on the element, the text inside the element is crossed out.</li>
+                    <li>If you want to delete all elements you can click to the 'All Remove' buton</li>
+                    <li>If you want to delete first element you can click to the 'Remove from First' buton</li>
+                    <li>If you want to delete last element you can click to the 'Remove from Last' buton</li>
+                    <li>If you want to delete all stroke elements you can click to the 'Only Stroke Elements Remove buton</li>
+                    <li>If you want to delete one of any elements you can right click buton of your mouse</li>
+                </ul>
             </div>
             <div class="form">
                 <input id="input" type="text" name="name" placeholder="write the tag name">
@@ -26,10 +70,10 @@
         <div class="buttons">
             <button id="button">Add to Last</button>
             <button id="button4">Add to First</button>
-            <button id="button2">All Remove</button>
+            <button id="button2">Remove All Elements</button>
             <button id="button5">Remove from First</button>
             <button id="button6">Remove from Last</button>
-            <button id="button3">Only Stroke Elements Remove</button>
+            <button id="button3">Remove Only Stroke Elements</button>
         </div>
     </div>
     <div id="todo">
